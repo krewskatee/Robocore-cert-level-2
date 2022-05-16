@@ -43,7 +43,7 @@ Open the robot order website
 
 Invalid Password
     Add heading    Admin Credentials
-    Add text input
+    Add password input
     ...    secret_key_field
     ...    label=Wrong secret key, please try again.
     ...    placeholder=secret key
@@ -75,7 +75,7 @@ Get The Secret Key
 
 Open Password Enter
     Add heading    Admin Credentials
-    Add text input
+    Add password input
     ...    secret_key_field
     ...    label=Please enter the secret key to start.
     ...    placeholder=secret key
@@ -119,3 +119,4 @@ Export the receipt as a PDF
 Create ZIP Archive of PDFs
     Archive Folder With ZIP    output_files    orders.zip    recursive=True    include=*.pdf
     Empty Directory    output_files
+    Remove file    orders.csv
